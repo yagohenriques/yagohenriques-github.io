@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Hello Javascript Word</title>
+
+<style>
+body{
+background-color: chartreuse;
+color: deeppink;
+}
+</style>
+</head>
+<body>
+
+<script>
+//Comentario de uma linha
+/***
+**comentatário de Multiplas linhas 
+**o comando abaixo só e visto no console
+**do navegador
+***/
+
+console.log("Alo Ha Mundo Javascript");
+
+// Abre uma janela e exibe o conteudo !
+
+alert("Saudades do Sublime <3");
+
+window.onload = function(){
+
+document.querySelector("h1").textContent = "JS é massa";
+
+//Elemento HTML em uma variavel Javascript
+var h1 = document.querySelector("h1");
+h1.innerHTML = "<em>Js</em> não é Java!";
+h1.style = "font-size: 50px; \
+color: deepSkyBlue;"; 
+
+//varriavel moderna local
+let h1_2 = document.querySelector(".segundoH1");
+let h1_3 = document.querySelector("#terceiroH1"); 
+
+h1_2.style = "font-size: 10px";
+h1_3.style = "text-shadow: 3px 3px 5px black";
+let h_uns = document.querySelectorAll("h1");
+
+for(let i=0; i < h_uns.length; i++)
+h_uns[i].style = "border: 2px dashed white";
+
+
+
+}
+var carName= "Volvo";
+//https://www.w3schools.com/js/default.asp
+</script>
+
+<h1>Introdução à Linguagem Javascript</h1>
+
+<h1 Class="segundoH1">SegundoH1</h1>
+
+<h1 id="terceiroH1">TerceiroH1</h1>
+
+  
+
+    <div style="text-align: center;">
+    <h2>Exemplo da Lâmpada</h2>
+
+    <button onclick="document.querySelector('#Lâmpada').src = 'ligada.gif'">
+            acender</button>
+    <img src="apagada.gif" id="Lâmpada" anmouseaver="acender()" anmouseaut="apagar()">
+        
+    <button onclick="document.querySelector('#Lâmpada').src = 'apagada.gif'">
+    apagar</button>
+
+  </div>
+  
+    <script>
+        
+    var Lâmpada = document.querySelector("#Lâmpada");
+    function Acender(){Lâmpada.src = "ligada.gif"}
+    function Apagar(){Lâmpada.src = "apagada.gif"}
+
+    </script>  
+</body>
+</html>
